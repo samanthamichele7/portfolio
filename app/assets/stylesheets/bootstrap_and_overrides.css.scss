@@ -1,3 +1,62 @@
 @import "bootstrap";
-body { padding-top: 60px; }
 @import "bootstrap-responsive";
+
+$quicksand: 'Quicksand', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+body {
+	font-family: $raleway;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $quicksand;
+}
+
+.content {
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+}
+
+.container {
+	padding: 100px;
+}
+
+
+#home {
+	.container {
+		padding-top: 150px;
+		h1, h4 {
+			color: white;
+		}
+		#home-box {
+		padding: 20px;
+		background-color:rgba(255,0,0,0.5);
+		margin-right: 68%;	
+		}
+	}
+}
+
+.navbar-inner {
+	.container{
+		padding: 0px;
+	}
+	min-height: 40px;
+	padding: 10px 20px;
+	background-color: #FFF;
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	.brand {
+		font-family: $quicksand;
+		color: #9E0000;
+		font-size: 1.75em;
+	}
+}
+
+.navbar .nav > li > a {
+	color: black;
+}

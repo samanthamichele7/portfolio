@@ -103,6 +103,7 @@ GEM
     guard-rspec (2.5.2)
       guard (>= 1.1)
       rspec (~> 2.11)
+    high_voltage (1.2.2)
     hike (1.2.1)
     hub (1.10.5)
     i18n (0.6.1)
@@ -227,6 +228,7 @@ DEPENDENCIES
   guard-cucumber (>= 1.4.0)
   guard-rails (>= 0.4.0)
   guard-rspec (>= 2.5.2)
+  high_voltage
   hub (>= 1.10.2)
   jquery-rails
   launchy (>= 2.2.0)
