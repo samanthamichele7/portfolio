@@ -66,3 +66,34 @@ h1,h2,h3,h4,h5,h6 {
 .social-media {
 	padding-top: 20px;
 }
+
+.carousel-inner {
+	.item {
+	text-align: center;
+	padding: 5px;
+	}
+	h2 {
+		padding-bottom: 20px;
+	}
+	.box-shadow {
+		-moz-box-shadow: 0 0 5px #888;
+		-webkit-box-shadow: 0 0 5px#888;
+		box-shadow: 0 0 5px #888;
+	}
+	.portfolio-description {
+		display: block;
+		padding-top: 60px;
+		p {
+			text-align: left;
+		}
+		li {
+			text-align: left;
+			margin-left: 60px;
+		}
+	}
+}
+.carousel-inner > .item > img {
+	display: inline;
+	text-align: center;
+}
+
