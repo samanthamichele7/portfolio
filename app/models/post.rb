@@ -10,7 +10,7 @@
 #  updated_at :datetime         not null
 #
 
-class Post < ActiveRecord::Base
+class Post < ActiveRecord::Base	
   attr_accessible :content, :name, :title
 
   validates :name, :presence => true

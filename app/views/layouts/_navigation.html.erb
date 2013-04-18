@@ -1,9 +1,13 @@
 <%= link_to "Samantha Geitz", root_path, :class => 'brand' %>
 
+
 <ul class="nav pull-right">
 	<li><%= link_to "About", page_path("about") %></li>
 	<li><%= link_to "Blog", posts_path %></li>
 	<li><%= link_to "Portfolio", page_path("portfolio") %></li>
 	<li><%= link_to "Resume", page_path("resume") %></li>
 	<li><%= link_to "Contact", page_path("contact") %></li>
+	<li><% if current_admin %>
+  	      <%= link_to('Logout', destroy_admin_session_path, :method => :delete) %>   
+	    <% end %></li>
 </ul>
