@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'devise'
 
+
 group :development do
   gem 'sqlite3', '1.3.5'
   gem 'annotate'
@@ -12,6 +13,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'jquery-rails'
+gem "ckeditor"
+gem "paperclip"
 gem "rspec-rails", ">= 2.13.0", :group => [:development, :test]
 gem "database_cleaner", ">= 1.0.0.RC1", :group => :test
 gem "email_spec", ">= 1.4.0", :group => :test

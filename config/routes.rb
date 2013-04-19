@@ -1,5 +1,7 @@
 Portfolio::Application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
+
   devise_for :admins do
   	get "sign_in" => "devise/sessions#new"
   	get 'logout' => 'devise/sessions#destroy'
