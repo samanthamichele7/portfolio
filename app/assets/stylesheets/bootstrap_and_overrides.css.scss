@@ -80,6 +80,7 @@ background-color: whitesmoke;
 
 
 .carousel-inner {
+	padding-bottom: 150px;
 	.item {
 	text-align: center;
 	padding: 5px;
@@ -108,5 +109,13 @@ background-color: whitesmoke;
 .carousel-inner > .item > img {
 	display: inline;
 	text-align: center;
+}
+
+.resume-name {
+	text-align: center;
+	a:hover {
+	color: green;
+}
+
 }
 
