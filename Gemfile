@@ -15,6 +15,7 @@ end
 gem 'jquery-rails'
 gem "ckeditor"
 gem 'asset_sync'
+gem 'paperclip'
 gem "rspec-rails", ">= 2.13.0", :group => [:development, :test]
 gem "database_cleaner", ">= 1.0.0.RC1", :group => :test
 gem "email_spec", ">= 1.4.0", :group => :test
