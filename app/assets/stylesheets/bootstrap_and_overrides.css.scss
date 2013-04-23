@@ -6,7 +6,6 @@ $raleway: 'Raleway', sans-serif;
 
 body {
 	font-family: $raleway;
-	font-size: 1em;
 	letter-spacing: 2px;
 }
 
@@ -21,6 +20,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .container {
+	p {
+	  font-size: 1.1em;
+	  line-height: 25px;
+	}
 	a, a:visited {
 	color: #9E0000;
 		&:hover {
@@ -124,3 +127,8 @@ background-color: whitesmoke;
 	}
 }
 
+#contact {
+	padding-top: 50px;
+	margin: 0px 200px;
+	text-align: center;
+}
