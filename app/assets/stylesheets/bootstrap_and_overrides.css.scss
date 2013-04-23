@@ -4,13 +4,15 @@
 $quicksand: 'Quicksand', sans-serif;
 $raleway: 'Raleway', sans-serif;
 
+/******* Application styles *******/
+
 body {
-	font-family: $raleway;
-	letter-spacing: 2px;
+  font-family: $raleway;
+  letter-spacing: 2px;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: $quicksand;
+  font-family: $quicksand;
 }
 
 
@@ -26,30 +28,39 @@ h1,h2,h3,h4,h5,h6 {
 	}
 	a, a:visited {
 	color: #9E0000;
-		&:hover {
-			color: #ccc;
-		}
+	  &:hover {
+	    color: #ccc;
+	  }
+	}
+	.resume-name {  // Centers resume name, websites, etc.
+	  text-align: center;
+	  a:hover {
+	  color: green;
 	}
 }
+}
 
-
+/******* Home Page Styles *******/
 #home {
-	.container {
-		padding-top: 150px;
-		h1, h4 {
-			color: white;
-		}
-		#home-box {
-		padding: 20px;
-		background-color:rgba(255,0,0,0.5);
-		margin-right: 68%;	
-		}
+  .container {
+	padding-top: 150px;
+	h1, h4 {
+	  color: white;
 	}
+	#home-box {
+	  padding: 20px;
+	  background-color:rgba(255,0,0,0.5);
+	  margin-right: 68%;	
+	}
+  }
 }
+
+
+/******* Navigation Bar *******/
 
 .navbar-inner {
 	.container{
-		padding: 0px;
+	  padding: 0px;
 	}
 	min-height: 40px;
 	padding: 10px 20px;
@@ -62,24 +73,28 @@ h1,h2,h3,h4,h5,h6 {
 	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 	.brand {
-		font-family: $quicksand;
-		color: #9E0000;
-		font-size: 1.75em;
+	  font-family: $quicksand;
+	  color: #9E0000;
+	  font-size: 1.75em;
 	}
 }
 
 .navbar .brand:hover, .navbar .brand:focus {
-text-decoration: none;
-background-color: whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
 }
 
 .navbar .nav > li > a {
-	color: black;
+  color: black;
 }
 
+/******* About Page *******/
+
 .social-media {
-	padding-top: 20px;
+  padding-top: 20px;
 }
+
+/******* Portfolio Slideshow *******/
 
 #myCarousel {
   width: auto;
@@ -89,46 +104,41 @@ background-color: whitesmoke;
 
 
 .carousel-inner {
-	padding-bottom: 150px;
-	.item {
+  padding-bottom: 150px;
+  .item {
 	text-align: center;
 	padding: 5px;
+  }
+  h2 {
+	padding-bottom: 20px;
+  }
+  .box-shadow {
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+  }
+  .portfolio-description {
+	display: block;
+	padding-top: 60px;
+	p {
+	  text-align: left;
 	}
-	h2 {
-		padding-bottom: 20px;
+	li {
+	  text-align: left;
+	  margin-left: 60px;
 	}
-	.box-shadow {
-		-moz-box-shadow: 0 0 5px #888;
-		-webkit-box-shadow: 0 0 5px#888;
-		box-shadow: 0 0 5px #888;
-	}
-	.portfolio-description {
-		display: block;
-		padding-top: 60px;
-		p {
-			text-align: left;
-		}
-		li {
-			text-align: left;
-			margin-left: 60px;
-		}
-	}
+  }
 }
 
 .carousel-inner > .item > img {
-	display: inline;
-	text-align: center;
+  display: inline;
+  text-align: center;
 }
 
-.resume-name {
-	text-align: center;
-	a:hover {
-	color: green;
-	}
-}
+/******* Contact Page *******/
 
 #contact {
-	padding-top: 50px;
-	margin: 0px 200px;
-	text-align: center;
+  padding-top: 50px;
+  margin: 0px 200px;
+  text-align: center;
 }
