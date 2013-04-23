@@ -18,11 +18,12 @@ h1,h2,h3,h4,h5,h6 {
 
 .content {
 
-  padding: 100px 20px;
+  padding: 20px;
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
 }
 
 .container {
+	padding-top: 100px;
 	p {
 	  font-size: 1.1em;
 	  line-height: 25px;
@@ -61,7 +62,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .navbar-inner {
 	.container{
-	  padding: 0px;
+	  padding: 0px !important;
 	}
 	min-height: 40px;
 	padding: 10px 20px;
