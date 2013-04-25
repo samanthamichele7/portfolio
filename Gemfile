@@ -11,10 +11,10 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'asset_sync'
 end
 gem 'jquery-rails'
 gem "ckeditor"
-gem 'asset_sync'
 gem 'paperclip'
 gem "rspec-rails", ">= 2.13.0", :group => [:development, :test]
 gem "database_cleaner", ">= 1.0.0.RC1", :group => :test
