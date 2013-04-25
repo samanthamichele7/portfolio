@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Portfolio" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Portfolio" %>">
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
@@ -21,12 +21,10 @@
     </div>
       <div id="main" role="main">
         <div class="container">
-          <div class="content">
               <%= render 'layouts/messages' %>
               <%= yield %>
           <footer>
           </footer>
-          </div> <!--! end of content -->
         </div> <!--! end of container -->
     </div> <!--! end of #main -->
   </body>
