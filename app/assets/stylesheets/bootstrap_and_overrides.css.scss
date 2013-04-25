@@ -4,24 +4,82 @@
 $quicksand: 'Quicksand', sans-serif;
 $raleway: 'Raleway', sans-serif;
 
+/******* Responsive **********/
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	.backstretch {
+		display: none;
+	}
+	.container {
+		padding: 20px 0px !important;
+	}
+	#home {
+	  background: url("smg-bg-small.png");
+      background-size: cover;
+      .container{
+		padding: 60px 0px !important;
+		.home-box {
+	      padding: 20px;
+	      background-color:rgba(255,0,0,0.5);
+	      margin-right: 10px;
+	      margin-top: 50px;	
+	    }
+      }	
+    }
+	.navbar-inner {
+	  min-height: 20px;
+	  padding: 10px;
+	  background-color: none !important;
+	  background-image: none !important;
+	  border: none;
+	  box-shadow: none;
+    }
+	#myCarousel {
+      width: auto;
+      height: 40px !important;
+      max-height: 40px !important;
+    }
+    #contact {
+      padding-top: 20px;
+      margin: 0px !important;
+      text-align: center;
+    }
+ }
+
+
+
 /******* Application styles *******/
+
 
 body {
   font-family: $raleway;
   letter-spacing: 2px;
+  margin: 0 auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: $quicksand;
 }
 
-
-.content {
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+.container {
+	padding: 60px 0px;
 }
 
-.container {
+.content {
+
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+
+
 	p {
 	  font-size: 1.1em;
 	  line-height: 25px;
@@ -40,31 +98,16 @@ h1,h2,h3,h4,h5,h6 {
 }
 }
 
-/******* Home Page Styles *******/
-#home {
-  .container {
-	padding-top: 150px;
-	h1, h4 {
-	  color: white;
-	}
-	#home-box {
-	  padding: 20px;
-	  background-color:rgba(255,0,0,0.5);
-	  margin-right: 68%;	
-	}
-  }
-}
-
-
 /******* Navigation Bar *******/
 
 .navbar-inner {
 	.container{
-	  padding: 0px;
+	  padding: 0px !important;
 	}
 	min-height: 40px;
-	padding: 10px 20px;
+	padding: 10px;
 	background-color: #FFF;
+	background-image: none;
 	border: 1px solid #d4d4d4;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -81,12 +124,32 @@ h1,h2,h3,h4,h5,h6 {
 
 .navbar .brand:hover, .navbar .brand:focus {
   text-decoration: none;
-  background-color: whitesmoke;
+  color: #000;
 }
 
 .navbar .nav > li > a {
   color: black;
+  &:hover {
+  	color: #9E0000;
+  }
 }
+
+/******* Home Page *******/
+
+#home {
+  .container {
+	padding-top: 150px;
+	h1, h4 {
+	  color: white;
+	}
+	.home-box {
+	  padding: 20px;
+	  background-color:rgba(255,0,0,0.5);
+	  margin-right: 10px;	
+	}
+  }
+}
+
 
 /******* About Page *******/
 
@@ -142,3 +205,5 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0px 200px;
   text-align: center;
 }
+
+
