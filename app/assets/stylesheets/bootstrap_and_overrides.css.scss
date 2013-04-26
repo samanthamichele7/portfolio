@@ -3,6 +3,7 @@
 
 $quicksand: 'Quicksand', sans-serif;
 $raleway: 'Raleway', sans-serif;
+$pink: $pink;
 
 /******* Responsive **********/
 
@@ -70,8 +71,19 @@ h1,h2,h3,h4,h5,h6 {
   font-family: $quicksand;
 }
 
+a {
+  color: #aaa;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: $pink;
+    text-decoration: none;
+  }
+}
+
 .container {
-	padding: 60px 0px;
+	padding: 100px 0px;
 }
 
 .content {
@@ -84,18 +96,6 @@ h1,h2,h3,h4,h5,h6 {
 	  font-size: 1.1em;
 	  line-height: 25px;
 	}
-	a, a:visited {
-	color: #9E0000;
-	  &:hover {
-	    color: #ccc;
-	  }
-	}
-	.resume-name {  // Centers resume name, websites, etc.
-	  text-align: center;
-	  a:hover {
-	  color: green;
-	}
-}
 }
 
 /******* Navigation Bar *******/
@@ -117,7 +117,7 @@ h1,h2,h3,h4,h5,h6 {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 	.brand {
 	  font-family: $quicksand;
-	  color: #9E0000;
+	  color: $pink;
 	  font-size: 1.75em;
 	}
 }
@@ -130,7 +130,7 @@ h1,h2,h3,h4,h5,h6 {
 .navbar .nav > li > a {
   color: black;
   &:hover {
-  	color: #9E0000;
+  	color: $pink;
   }
 }
 
@@ -195,6 +195,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .carousel-inner > .item > img {
   display: inline;
+  text-align: center;
+}
+
+
+/******* Resume Page *******/
+
+.resume-name {  
   text-align: center;
 }
 
