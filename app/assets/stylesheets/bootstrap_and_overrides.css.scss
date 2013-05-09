@@ -3,7 +3,9 @@
 
 $quicksand: 'Quicksand', sans-serif;
 $raleway: 'Raleway', sans-serif;
-$pink: $pink;
+$pink: #c3325f;
+$purple: #985695;
+$water: #406473;
 
 /******* Responsive **********/
 
@@ -71,6 +73,19 @@ h1,h2,h3,h4,h5,h6 {
   font-family: $quicksand;
 }
 
+h1, h2, h3 {
+  color: $purple;
+}
+
+h4 {
+  color: $water;
+}
+
+h5 {
+  color: black;
+  font-size: 1.25em;
+}
+
 a {
   color: #aaa;
   &:visited {
@@ -82,6 +97,10 @@ a {
   }
 }
 
+p {
+  font-size: 1.1em !important;
+  line-height: 25px !important;
+}
 .container {
 	padding: 100px 0px;
 }
@@ -90,12 +109,6 @@ a {
 
   padding: 20px;
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-
-
-	p {
-	  font-size: 1.1em;
-	  line-height: 25px;
-	}
 }
 
 /******* Navigation Bar *******/
@@ -182,9 +195,10 @@ a {
   }
   .portfolio-description {
 	display: block;
-	padding-top: 60px;
+	padding-top: 10px;
 	p {
 	  text-align: left;
+	  font-size: 1em !important;
 	}
 	li {
 	  text-align: left;
