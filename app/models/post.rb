@@ -10,12 +10,12 @@
 #  updated_at :datetime         not null
 #
 
-class Post < ActiveRecord::Base	
-  attr_accessible :content, :name, :title
+class Post < ActiveRecord::Base
+  attr_accessible :content, :title, :name
 
-  validates :name, :presence => true
-  validates :title, :presence => true,
-  					:length => { :minimum => 5 }
+  belongs_to :admin
 
-  has_many :comments, :dependent => :destroy
+  validates :admin_id, :name, :content, :title, presence: true
+
+  default_scope order: 'posts.created_at ASC'
 end
