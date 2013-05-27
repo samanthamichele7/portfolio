@@ -13,6 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require ckeditor/init
 //= require jquery.backstretch.min
 //= require_tree .

@@ -53,6 +53,7 @@ describe "PostPages" do
       	before do
       	  fill_in "Name", with: "Administrator"
       	  fill_in "Title", with: "Title"
+          fill_in "Content", with: "Lorem ipsum"
       	end
 
       	it "should increase post count" do
@@ -64,7 +65,46 @@ describe "PostPages" do
       	  current_path.should == "/posts/2"
 
       	  subject.should have_content("Title")
+          subject.should have_content("Lorem ipsum") 
+          subject.should have_content("Disqus") 
       	end
+      end
+    end
+
+    describe "manipulating an existing post" do
+      before { visit "/posts/1" }
+
+      describe "edit" do
+        before do 
+          click_link "Edit Post"
+        end
+
+        it { should have_selector('h1', 'Edit Post') }
+
+        describe "editing a post" do
+          let(:new_title) { "New Title" }
+          let(:new_content) { "New Content" } 
+
+          before do
+            fill_in "Title", with: new_title
+            fill_in "Content", with: new_content
+            click_button "Update Post"
+          end
+
+          it "should redirect to post#show" do
+            current_path.should == "/posts/1"
+          end
+
+          it { should have_selector('h2', text: new_title) }
+          it { should have_content(new_content) }
+        end
+
+      end
+
+      describe "delete" do
+        it "should successfully delete a post" do
+          expect { click_link "Delete Post"}.to change(Post, :count).by(-1)
+        end
       end
     end
   end	

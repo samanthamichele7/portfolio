@@ -1,7 +1,5 @@
 Portfolio::Application.routes.draw do
 
-  mount Ckeditor::Engine => '/ckeditor'
-
   devise_for :admins
 
   devise_scope :admin do
