@@ -12,12 +12,6 @@
       <h3><%= link_to post.title, post %></td></h3>
       <p><%= post.content.html_safe %></p>
 
-	    <% if current_admin %>
-	      
-	      <%= link_to 'Edit', edit_post_path(post) %></td>
-	      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-	    <% end %>
-
 	</div>
    </div>
    <br />
